@@ -1,0 +1,72 @@
+{
+	"pages": [{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "陪诊师"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pagesA",
+		"pages": []
+	}],
+	"preloadRule": {
+		// "pages/home/home": {
+		// "network": "all",
+		// "packages": ["pagesA"]
+		// }
+	},
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#38C4AB",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/tabbar_home.png",
+				"selectedIconPath": "static/tabbar_home_h.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/order/order",
+				"iconPath": "static/tabbar_home.png",
+				"selectedIconPath": "static/tabbar_home_h.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/tabbar_home.png",
+				"selectedIconPath": "static/tabbar_home_h.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/tabbar_home.png",
+				"selectedIconPath": "static/tabbar_home_h.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#51BBA4"
+	}
+}
