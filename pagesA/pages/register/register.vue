@@ -17,16 +17,12 @@
 				<image class="image_7" referrerpolicy="no-referrer" />
 				<text class="paragraph_1">
 					<text style="display: block">形象照片</text>
-
 					<br />
 					<text style="display: block">展示称呼</text>
-
 					<br />
 					<text style="display: block">性别</text>
-
 					<br />
 					<text style="display: block">年龄</text>
-
 					<br />
 					<text style="display: block">手机号</text>
 					<br />
@@ -122,7 +118,7 @@
 					</view>
 				</view>
 				<view class="text-wrapper_4 flex-col" @click="hantdleSubmit">
-					<text class="text_13">{{isEdit ? '保存' : '注册成为陪诊师'}}</text>
+					<text class="text_13">{{ isEdit ? '保存' : '注册成为陪诊师' }}</text>
 				</view>
 				<!-- <image class="image_14" referrerpolicy="no-referrer" src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng5a55bce0e61824e6b35e82f487c8fc2828194ab82d71f586b93de2f8b36bc031" /> -->
 				<!-- <image class="thumbnail_13" referrerpolicy="no-referrer" src="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/e9f615ad5d4a4af2add234d3e4a81e8c_mergeImage.png" /> -->
@@ -139,7 +135,7 @@ export default {
 			items: ['男', '女'],
 			styleType: 'line',
 			isAgreement: true,
-      isEdit:false,
+			isEdit: false,
 		}
 	},
 	onLoad(val) {
@@ -155,10 +151,12 @@ export default {
 			}
 		},
 		openFile() {
-			uni.showToast({
-				title: '选择图片',
-				icon: 'none',
-				duration: 1000,
+			uni.chooseImage({
+				count: 1,
+				sizeType: ['original', 'compressed'],
+				sourceType: ['album', 'camera'],
+				success: ({ tempFilePaths, tempFiles }) => {},
+				fail: error => {},
 			})
 		},
 		gotoAgreement() {
