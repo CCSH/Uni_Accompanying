@@ -33,9 +33,9 @@
 					</view>
 				</view>
 			</view>
-			<view class="image-wrapper_2 flex-col">
+			<!-- <view class="image-wrapper_2 flex-col">
 				<image class="image_6" referrerpolicy="no-referrer" src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng5a55bce0e61824e6b35e82f487c8fc2828194ab82d71f586b93de2f8b36bc031" />
-			</view>
+			</view> -->
 		</view>
 		<!-- 弹窗 -->
 		<uni-popup ref="popup_cancel" type="dialog" class="dialog" background-color="#fff" borderRadius="10rpx   10rpx   10rpx   10rpx">

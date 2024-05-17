@@ -105,13 +105,13 @@
             <text class="text_8">转单</text>
           </view>
         </view>
-        <view class="image-wrapper_2 flex-row">
+        <!-- <view class="image-wrapper_2 flex-row">
           <image
             class="image_5"
             referrerpolicy="no-referrer"
             src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng5a55bce0e61824e6b35e82f487c8fc2828194ab82d71f586b93de2f8b36bc031"
           />
-        </view>
+        </view> -->
       </view>
 		</view>
     		<!-- 弹窗 -->

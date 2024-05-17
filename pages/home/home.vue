@@ -305,7 +305,7 @@ export default {
 					background-size: 702rpx 122rpx;
 					padding: 22rpx 258rpx 16rpx 176rpx;
 					.text-wrapper_4 {
-						background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng4f316750aeeb8e925d9ebdb8f2763a1a3e3c002d9ab71432f38340a835e4fc42) 100% no-repeat;
+						// background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng4f316750aeeb8e925d9ebdb8f2763a1a3e3c002d9ab71432f38340a835e4fc42) 100% no-repeat;
 						background-size: 100% 100%;
 						.image-text_2 {
 							width: 246rpx;
