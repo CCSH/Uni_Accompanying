@@ -1,5 +1,6 @@
 {
-	"pages": [{
+	"pages": [
+		{
 			"path": "pages/home/home",
 			"style": {
 				"navigationBarTitleText": "陪诊师"
@@ -20,47 +21,116 @@
 		{
 			"path": "pages/mine/mine",
 			"style": {
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom",
+				"transparentTitle": "always"
 			}
 		}
 	],
-	"subPackages": [{
-		"root": "pagesA",
-		"pages": []
-	}],
+	"subPackages": [
+		{
+			"root": "pagesA",
+			"pages": [
+				{
+					"path": "pages/privacy_agreement/privacy_agreement",
+					"style": {
+						"navigationBarTitleText": "隐私协议"
+					}
+				},
+				{
+					"path": "pages/customer_service/customer_service",
+					"style": {
+						"navigationBarTitleText": "客服"
+					}
+				},
+				{
+					"path": "pages/register/register",
+					"style": {
+						"navigationBarTitleText": "注册陪诊师"
+					}
+				},
+				{
+					"path": "pages/order_list/order_list",
+					"style": {
+						"navigationBarTitleText": "接单列表"
+					}
+				},
+				{
+					"path": "pages/mine_serve/mine_serve",
+					"style": {
+						"navigationBarTitleText": "我的服务"
+					}
+				},
+				{
+					"path": "pages/mine_hospital/mine_hospital",
+					"style": {
+						"navigationBarTitleText": "我的医院"
+					}
+				},
+
+				{
+					"path": "pages/order_detail/order_detail",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "pages/commission_withdrawal/commission_withdrawal",
+					"style": {
+						"navigationBarTitleText": "佣金提现"
+					}
+				},
+				{
+					"path": "pages/comment_list/comment_list",
+					"style": {
+						"navigationBarTitleText": "我的评价"
+					}
+				},
+				{
+					"path": "pages/login/login",
+					"style": {
+						"navigationStyle": "custom",
+						"transparentTitle": "always",
+						"navigationBarTextStyle": "black"
+					}
+				}
+			]
+		}
+	],
 	"preloadRule": {
-		// "pages/home/home": {
-		// "network": "all",
-		// "packages": ["pagesA"]
-		// }
+		"pages/home/home": {
+			"network": "all",
+			"packages": ["pagesA"]
+		}
 	},
 	"tabBar": {
 		"color": "#666666",
 		"selectedColor": "#38C4AB",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
-		"list": [{
+		"list": [
+			{
 				"pagePath": "pages/home/home",
-				"iconPath": "static/tabbar_home.png",
-				"selectedIconPath": "static/tabbar_home_h.png",
+				"iconPath": "static/shouye_n.png",
+				"selectedIconPath": "static/shouye_h.png",
 				"text": "首页"
 			},
 			{
 				"pagePath": "pages/order/order",
-				"iconPath": "static/tabbar_home.png",
-				"selectedIconPath": "static/tabbar_home_h.png",
+				"iconPath": "static/dingdan_n.png",
+				"selectedIconPath": "static/dingdan_h.png",
 				"text": "订单"
 			},
 			{
 				"pagePath": "pages/message/message",
-				"iconPath": "static/tabbar_home.png",
-				"selectedIconPath": "static/tabbar_home_h.png",
+				"iconPath": "static/xiaoxi_n.png",
+				"selectedIconPath": "static/xiaoxi_h.png",
 				"text": "消息"
 			},
 			{
 				"pagePath": "pages/mine/mine",
-				"iconPath": "static/tabbar_home.png",
-				"selectedIconPath": "static/tabbar_home_h.png",
+				"iconPath": "static/wode_n.png",
+				"selectedIconPath": "static/wode_h.png",
 				"text": "我的"
 			}
 		]

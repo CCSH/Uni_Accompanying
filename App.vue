@@ -1,5 +1,10 @@
 <script>
+// import dragButton from '@/components/drag-button/drag-button.vue'
+
 export default {
+	// components: {
+	// 	dragButton,
+	// },
 	globalData: {
 		clickInterval: 2000, //防重复点击间隔
 		toastDuration: 2000, //toast时间

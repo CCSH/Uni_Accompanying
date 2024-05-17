@@ -36,7 +36,6 @@ button:active {
 	display: flex;
 	justify-content: center;
 }
-
 .justify-end {
 	display: flex;
 	justify-content: flex-end;
@@ -64,4 +63,16 @@ button:active {
 .align-end {
 	display: flex;
 	align-items: flex-end;
+}
+
+.fixed {
+	position: fixed;
+}
+
+/* 全局Class样式 */
+.page {
+	position: relative;
+	width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
 }
