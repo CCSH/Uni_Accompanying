@@ -122,7 +122,6 @@ export default {
 			}
 			//判断注册
 			let userInfo = uni.getStorageSync('userInfo')
-			console.log('ccsh', userInfo, userInfo.name != 'ccsh')
 			if (userInfo.name != 'ccsh') {
 				//弹窗
 				uni.showModal({
