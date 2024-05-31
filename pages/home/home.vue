@@ -4,7 +4,7 @@
 			<view class="block_8 flex-col">
 				<image class="block_3 flex-col" src="/static/img_banner@2x.png" mode="scaleToFill" @click="gotoWecome" />
 				<view class="block_4 flex-row justify-between">
-					<swiper class="text-wrapper_2" autoplay="true" interval="“3”" vertical circular>
+					<swiper class="text-wrapper_2" autoplay interval="“2”" vertical circular>
 						<swiper-item >
 							<text class="text_4">恭喜</text>
 							<text class="text_5">#&nbsp;晓霞陪诊&nbsp;#</text>
@@ -12,7 +12,7 @@
 						</swiper-item>
 						<swiper-item>
 							<text class="text_4">恭喜</text>
-							<text class="text_5">#&nbsp;晓红陪诊&nbsp;#</text>
+							<text class="text_5">#&nbsp;啦啦啦啦啦陪诊&nbsp;#</text>
 							<text class="text_6">&nbsp;入驻</text>
 						</swiper-item>
 					</swiper>
@@ -251,7 +251,7 @@ export default {
 				padding-left: 28rpx;
 				margin: 18rpx 24rpx 0 0;
 				.text-wrapper_2 {
-					width: 296rpx;
+					// width: 296rpx;
 					height: 40rpx;
 					overflow-wrap: break-word;
 					font-size: 0;
