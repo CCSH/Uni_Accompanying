@@ -15,7 +15,7 @@
 							<text class="text_5">#&nbsp;啦啦啦啦啦陪诊&nbsp;#</text>
 							<text class="text_6">&nbsp;入驻</text>
 						</swiper-item>
-								<swiper-item>
+						<swiper-item>
 							<text class="text_4">恭喜</text>
 							<text class="text_5">#&nbsp;你好陪诊&nbsp;#</text>
 							<text class="text_6">&nbsp;入驻</text>
@@ -25,7 +25,7 @@
 						<text class="text_7">我要入驻</text>
 					</view>
 				</view>
-				<view class="box_2 flex-col" @click="isTake = !isTake">
+				<view class="box_2 flex-col" @click="takeVisible = true">
 					<view class="block_5 flex-col">
 						<view class="text-wrapper_4 flex-row">
 							<view class="image-text_2 flex-row justify-between">
@@ -74,17 +74,30 @@
 				</view>
 			</view>
 		</uni-popup>
+		<dialogPop
+			:visible="takeVisible"
+			:title="isTake ? '停止接单' : '开始接单'"
+			:content="isTake ? '停止接单后，您将会在用户端隐藏，是否确定停止接单？' : '点击“确定”开始接单'"
+			contentAlign="center"
+			@close="takeVisible = false"
+			@sure="
+				takeVisible = false
+				isTake = !isTake
+			" />
 	</view>
 </template>
 <script>
 import dragButton from '@/components/drag-button/drag-button.vue'
+import dialogPop from '@/components/dialog-pop.vue'
 
 export default {
 	components: {
 		dragButton,
+		dialogPop,
 	},
 	data() {
 		return {
+			takeVisible: false,
 			isTake: false,
 		}
 	},
@@ -505,6 +518,115 @@ export default {
 					text-align: left;
 					white-space: nowrap;
 					line-height: 40rpx;
+				}
+			}
+		}
+	}
+}
+
+.dialog {
+	background: #fff;
+	.group_3 {
+		background: #fff;
+		// background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngcb35ff0cd823ed383a1e9d36753420090c769b076fc9a52a536095391a4ea5f8) 100% no-repeat;
+		// background-size: 100% 100%;
+		padding: 40rpx 38rpx 58rpx 36rpx;
+		.box_7 {
+			position: relative;
+			width: 514rpx;
+			margin: 0 4rpx 0 2rpx;
+			padding: 6rpx 0 10rpx 52rpx;
+			.block_2 {
+				background-color: rgba(167, 227, 219, 1);
+				border-radius: 4px;
+				width: 62rpx;
+				height: 16rpx;
+				margin: 14rpx 0 2rpx 0;
+			}
+			.thumbnail_6 {
+				width: 32rpx;
+				height: 32rpx;
+			}
+			.text_4 {
+				position: absolute;
+				left: 0;
+				top: 0;
+				overflow-wrap: break-word;
+				color: rgba(51, 51, 51, 1);
+				font-size: 34rpx;
+				letter-spacing: 2.5999999046325684px;
+				font-family: PingFangSC-Medium;
+				font-weight: 500;
+				text-align: right;
+				white-space: nowrap;
+				line-height: 48rpx;
+			}
+		}
+		.box_8 {
+			position: relative;
+			margin: 56rpx 16rpx 0 0;
+			padding: 8rpx 450rpx 44rpx 0;
+			.block_3 {
+				background-color: rgba(255, 255, 255, 1);
+				width: 54rpx;
+				height: 28rpx;
+			}
+			.text_5 {
+				position: absolute;
+				left: 0;
+				top: 0;
+				overflow-wrap: break-word;
+				color: rgba(70, 70, 70, 1);
+				font-size: 28rpx;
+				font-weight: normal;
+				text-align: right;
+				white-space: nowrap;
+				line-height: 40rpx;
+			}
+			.text_8 {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 504rpx;
+				height: 80rpx;
+				overflow-wrap: break-word;
+				color: rgba(51, 51, 51, 1);
+				font-size: 28rpx;
+				font-weight: normal;
+				text-align: center;
+				line-height: 40rpx;
+			}
+		}
+		.box_9 {
+			width: 520rpx;
+			margin-top: 60rpx;
+			.text-wrapper_3 {
+				background-color: rgba(255, 255, 255, 1);
+				border-radius: 19px;
+				border: 1px solid rgba(230, 230, 230, 1);
+				padding: 20rpx 94rpx 18rpx 94rpx;
+				.text_9 {
+					overflow-wrap: break-word;
+					color: rgba(102, 102, 102, 1);
+					font-size: 24rpx;
+					font-weight: normal;
+					text-align: left;
+					white-space: nowrap;
+					line-height: 34rpx;
+				}
+			}
+			.text-wrapper_4 {
+				background-color: rgba(240, 98, 96, 1);
+				border-radius: 19px;
+				padding: 22rpx 96rpx 20rpx 96rpx;
+				.text_10 {
+					overflow-wrap: break-word;
+					color: rgba(255, 255, 255, 1);
+					font-size: 24rpx;
+					font-weight: normal;
+					text-align: left;
+					white-space: nowrap;
+					line-height: 34rpx;
 				}
 			}
 		}
