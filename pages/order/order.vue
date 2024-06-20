@@ -12,7 +12,7 @@
 						<view v-show="index == 1" class="group_1 flex-col"></view>
 					</view>
 					<view class="tab">
-						<text :class="index == 2 ? 'text_h text_6' : 'text_6'" @click="index = 2">经提现</text>
+						<text :class="index == 2 ? 'text_h text_6' : 'text_6'" @click="index = 2">已提现</text>
 						<view v-show="index == 2" class="group_1 flex-col"></view>
 					</view>
 					<view class="tab">

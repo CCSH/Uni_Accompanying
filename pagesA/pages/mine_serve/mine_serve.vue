@@ -47,7 +47,7 @@
 					</view>
 					<view class="group_7 flex-row justify-between" @click="handleClick(3)">
 						<view class="image-text_3 flex-row justify-between">
-							<view class="group_8 flex-col" style="background: url(/static/qusongjieguo2@2x.png); background-size: cover"></view>
+							<view class="group_9 flex-col"></view>
 							<view class="text-group_3 flex-col">
 								<text class="text_15">送取结果</text>
 								<text class="text_16">送/取结果快递到家服务,服务仅限当天有效</text>
@@ -265,8 +265,16 @@ export default {
 							margin-bottom: 8rpx;
 							background-size: cover;
 						}
+						.group_9 {
+							border-radius: 3px;
+							background-image: url(/static/qusongjieguo2@2x.png);
+							width: 120rpx;
+							height: 120rpx;
+							margin-bottom: 8rpx;
+							background-size: cover;
+						}
 						.text-group_3 {
-              margin-left: 20rpx;
+							margin-left: 20rpx;
 							.text_15 {
 								overflow-wrap: break-word;
 								color: rgba(51, 51, 51, 1);

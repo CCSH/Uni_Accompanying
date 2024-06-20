@@ -15,7 +15,7 @@
 				<uni-segmented-control class="group_6" :current="current" :values="items" active-color="#51BBA4" @clickItem="onClickItem" />
 				<image class="image_6" referrerpolicy="no-referrer" />
 				<image class="image_7" referrerpolicy="no-referrer" />
-				<text class="paragraph_1">
+				<view class="paragraph_1">
 					<text style="display: block">形象照片</text>
 					<br />
 					<text style="display: block">展示称呼</text>
@@ -26,7 +26,7 @@
 					<br />
 					<text style="display: block">手机号</text>
 					<br />
-				</text>
+				</view>
 				<view class="paragraph_2 justify-between flex-col">
 					<input placeholder="请填写周岁年龄" />
 					<br />
